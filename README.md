@@ -12,7 +12,7 @@ Algunos ejemplos de esto son:
 
 - Este algoritmo fue hecho en TypeScript, usando vitest como entorno de pruebas unitarias.
 
-## En cuanto a las pruebas unitarias":
+## En cuanto a las pruebas unitarias:
 
 - Se encuentran en el archivo llamado intex.test.ts
 
@@ -25,8 +25,8 @@ Hay cuatro casos de pruebas creados que cubren los siguientes escenarios:
 
 Para poder ejecutar las pruebas, seguir los siguientes pasos:
 
-1- Clonar el repositorio con git clone
-2- Ejecutar npm install dentro del directorio del proyecto
-3- Ejecutar npm run test para poder correr las pruebas
+- Clonar el repositorio con git clone
+- Ejecutar npm install dentro del directorio del proyecto
+- Ejecutar npm run test para poder correr las pruebas
 
 Ahí se podrá ver los resultados
