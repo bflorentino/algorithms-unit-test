@@ -1,18 +1,18 @@
 import { it, expect, describe } from 'vitest'
 import { solution } from '.'
 
-describe("Testing max subarray sum algorithm", () => {
+describe("Probar la suma máxima de un subarray", () => {
 
-    it("should return 0 if array is empty", () => {
+    it("Si el array está vacio debería de retornar un 0", () => {
         expect(solution([])).toBe(0)
     })
 
-    it("should return only number in array", () => {
+    it("Si el array solo contiene un número, debe de retonar ese número ", () => {
         expect(solution([5])).toBe(5)
         expect(solution([9])).toBe(9)
     })
 
-    it("should return max sum in smaller cases", () => {
+    it("Debería de retonar el número más alto en casos de pocos elementos", () => {
         expect(solution([-9, 5])).toBe(5)
         expect(solution([4, -6, -9, 5, 3, -1, 8])).toBe(8)
         expect(solution([-10, -1, 5, 6, -2, 8, -4])).toBe(11)
@@ -23,7 +23,7 @@ describe("Testing max subarray sum algorithm", () => {
         expect(solution([-7, -6, -5, -4, -3, -2, -1])).toBe(-1)
     })
 
-    it("should return max sum in biggest cases", () => {
+    it("Debería de retonar el número máximo en casos con con muchos elementos", () => {
         expect(solution([...Array(10000 +1).keys()])).toBe(50005000)
         expect(solution([...Array(100000 +1).keys()])).toBe(5000050000)
         expect(solution([...Array(1000000 +1).keys()])).toBe(500000500000)
